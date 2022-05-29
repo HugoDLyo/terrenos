@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Terrenos</title>
+</head>
+<body>
+    
+    <h1>Comparación de Terrenos</h1>
+
+    <div class="contenido">
+
+        <div class="terrenos">
+
+            <form id="formulario" class="formulario">
+
+                <div class="terreno">
+                    <h2 class="terreno__title">Terreno A</h2>
+                    
+                    <p class="terreno__text">Lado</p>
+                    <input type="number" id="lado" min="1" class="campo">
+                    
+                    <p class="terreno__text">Costo</p>
+                    <input type="number" id="primer-costo" min="1" class="campo">
+                    
+                    <!-- <input type="submit" value="precio" id="primer-precio"> -->
+                </div>
+    
+                <div class="terreno">
+                    <h2 class="terreno__title">Terreno B</h2>
+                    
+                    <p class="terreno__text">Altura</p>
+                    <input type="number" id="altura" min="1" class="campo">
+                    
+                    <p class="terreno__text">Base</p>
+                    <input type="number" id="base" min="1" class="campo">
+                    
+                    <p class="terreno__text">Costo</p>
+                    <input type="number" id="segundo-costo" min="1" class="campo">
+    
+                    <!-- <input type="submit" value="precio" id="segundo-precio"> -->
+                </div>
+    
+                <div class="info">
+    
+                    <div class="botones">
+                        <input type="button" value="Calcular" id="calcular" class="btn">
+                        <input type="reset" value="Reset" id="limpiar" class="btn reset">
+                    </div>
+        
+                </div>
+
+                <div class="comparacion"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
