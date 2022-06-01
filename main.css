@@ -30,11 +30,22 @@ h1
     text-align: center;
     font-size: 3rem;
 }
-/* @media screen and (min-width: 376px) {
-    h1 {
-        font-size: 3.2rem;
-    }
-} */
+
+.info
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal
+{
+    width: 60%;
+    text-align: center;
+    line-height: 1.4;
+    border: .2rem solid var(--color-tercero);
+    background-color: var(--color-tercero);
+    box-shadow: .4rem .2rem .8rem var(--color-segundo);
+}
 
 .contenido
 {
@@ -42,11 +53,6 @@ h1
     width: 120rem;
     margin: 0 auto;
 }
-
-/* #formulario
-{
-    width: 100%;
-} */
 
 .formulario
 {
@@ -116,6 +122,7 @@ h1
     border-radius: .5rem;
     background-color: var(--color-segundo);
     color: var(--color-cuarto);
+    cursor: pointer;
 }
 
 .reset
@@ -132,11 +139,9 @@ h1
     border-right: .3rem;
     border-left: .3rem;
     border-style: solid;
-    /* border-color: var(--vacio); */
     border-radius: .5rem;
     color: var(--color-tercero);
     padding: 1.4rem;
-    /* background-color: rgba(255, 0, 0, 0.4); */
 }
 
 .error
@@ -155,4 +160,21 @@ h1
 {
     border-color: var(--exito);
     background-color: var(--exito-bg);
+}
+
+.footer
+{
+    padding: 0 2rem;
+}
+
+.imagen
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 4rem;
+}
+
+img
+{
+    height: 100%;
 }

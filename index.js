@@ -12,10 +12,15 @@ const btnResetFormulario = document.querySelector("#limpiar");
 let terrenoA;
 let terrenoB;
 
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector("#info");
+const closeModal = document.querySelector("#close");
+
 //* Evento al abrir la página
 document.addEventListener("DOMContentLoaded", function () {
   btnCalcular.addEventListener("click", comparar);
   btnResetFormulario.addEventListener("click", resetFormulario);
+  abrirModal();
 });
 
 //* Mensajes si los Input estan vacios
@@ -167,4 +172,19 @@ function resetFormulario() {
   }
 
   elimiarMensajes();
+}
+
+//* Modal
+function abrirModal() {
+  openModal.addEventListener("click", () => {
+    modal.setAttribute("open", true);
+  });
+
+  cerrarModal();
+}
+
+function cerrarModal() {
+  closeModal.addEventListener("click", () => {
+    modal.removeAttribute("open");
+  });
 }
